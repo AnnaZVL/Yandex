@@ -1,0 +1,156 @@
+@use '../helpers/variables.scss' as *;
+@use '../helpers/mixins.scss' as *;
+
+.header {
+    position: fixed;
+    inset: 0;
+    top: 40px;
+    z-index: 100;
+    height: 196px;
+    background-color: $color_bg;
+
+    &__container {
+        padding: 1.77rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.44rem;
+    }
+
+    &__logo-ts {
+        .img {
+            display: block;
+            width: 110px;
+            height: 133px;
+        }
+    }
+
+    &__logo-ya {
+        padding: 0 1.44rem;
+        position: relative;
+        
+        .img {
+            display: block;
+            width: 360px;
+            height: 54px;
+        }
+
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 54px;
+            background-color: $color_white;
+            display: block;
+        }
+
+        &::after {
+            right: 0;
+        }
+        
+        &::before {
+            left: 0;
+        }
+    }
+
+    &__logo-sm {
+        padding: 0 0.9rem;
+
+        .img {
+            display: block;
+            width: 168px;
+            height: 43px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.22rem;
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 0;
+            height: 1px;
+            background-color: $color_white;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $color_white;
+        @include font-custom(1rem, 400, "Magistral-Book");
+
+        
+    }
+}
+
+@media (max-width: 1050px) {
+    .header {
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 1.66rem;
+           justify-items: center;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+
+        &__logos {
+            gap: 12px;
+        }
+        &__logo-ts {
+            .img {
+                width: 36px;
+                height: 47px;
+            }
+        }
+
+         &__logo-ya {
+            padding: 0 12px;
+            .img {
+                width: 164px;
+                height: 25px;
+            }
+
+            &::after, &::before {
+                height: 25px;
+            }
+        }
+
+         &__logo-sm {
+            padding: 0 5px;
+            .img {
+                width: 62px;
+                height: 16px;
+            }
+        }
+    }
+}

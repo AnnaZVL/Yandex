@@ -1,0 +1,40 @@
+@use '../helpers/variables.scss' as *;
+@use '../helpers/mixins.scss' as *;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        padding: 1rem 1.5rem;            
+        color: $color_dark-blue;   
+        background: $color_white;
+        box-shadow: 0px 5.33333px 66.6667px 40px rgba(68, 68, 68, 0.1);
+        border-radius: 7px;
+        transform: rotate(-3deg);   
+        @include font-custom(2.22rem, 800, "Geometria");
+        text-transform: uppercase;
+        transform: rotate(-3deg);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__img {
+        margin-top: -110px;
+        width: 1345px;
+        height: 1340px;
+    }
+
+    &__text {
+        margin-top: 20px;
+        @include font-custom(1.33rem, 400, "Magistral-Book", 150%);
+    }
+}

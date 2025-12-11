@@ -1,0 +1,128 @@
+@use 'helpers/variables.scss' as *;
+@use 'helpers/fonts.scss' as *;
+@use 'helpers/mixins.scss' as *;
+@use 'components/header.scss' as *;
+@use 'components/hero.scss' as *;
+// @use 'components/tours.scss' as *;
+// @use 'components/hotels.scss' as *;
+// @use 'components/feedback.scss' as *;
+// @use 'components/revievs.scss' as *;
+// @use 'components/news.scss' as *;
+// @use 'components/about.scss' as *;
+// @use 'components/contacts.scss' as *;
+// @use 'components/footer.scss' as *;
+// @use 'components/modal.scss' as *;
+
+html {    
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;   
+    color: $color_white;   
+    @include font-default;
+    overflow-x: hidden;
+    background-color: $color_bg;
+
+    .main {
+        padding-top: 277px;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 1605px;
+        width: 100%;            
+    }
+    
+    // .btn {
+    //     padding: 10px 16px;
+    //     text-transform: uppercase;
+    //     background-color: transparent;
+    //     border: 1px solid $color_gray;
+    //     border-radius: 30px;
+    //     align-items: center;
+    //     @include font-default;
+    //     font-weight: 500;
+    //     font-size: 0.875rem;
+    //     cursor: pointer;
+    //     transition: background 0.3s ease-in-out;
+
+    //     &:hover {
+    //       background-color: $color_gray-bg;
+    //     }
+
+    //     &--color {
+    //         padding: 10px 28px;
+    //         display: flex;
+    //         align-items: center;
+    //         gap: 8px;
+    //         background-color: $color_red;
+    //         color: $color_white;
+    //         border: none;
+    //         min-width: 168px;
+    //         font-size: 1rem;
+    //         line-height: 1.18rem;
+
+    //         &:hover {
+    //             background-color: $color_red-active;
+    //         }
+
+    //         svg {
+    //             width: 11px;
+    //             height: 11px;
+    //         }
+    //     }
+    // }
+
+    .title {        
+        font-size: 4.44rem;
+        line-height: 100%;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        text-align: center;
+
+        &__line {
+            display: block;            
+
+            &--gold {
+                margin-top: 0.5rem;
+                color: $color_gold;
+            }            
+        }  
+
+    }
+}
+
+@media (max-width: 562px) {
+    html {
+        font-size: 14px;
+    }
+}

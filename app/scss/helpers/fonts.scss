@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Magistral-Book";
+  src: url("../fonts/magistral-book.woff2") format("woff2"), 
+      url("../fonts/magistral-book.ttf") format("opentype");
+  font-weight:400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Magistral-Bold";
+  src: url("../fonts/magistral-bold.woff2") format("woff2"), 
+      url("../fonts/magistral-bold.ttf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-extrabold.woff2") format("woff2"), 
+      url("../fonts/Geometria-extrabold.ttf") format("opentype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+

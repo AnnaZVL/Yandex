@@ -1,0 +1,13 @@
+@mixin font-default {
+	font-size: 1rem;
+	line-height: 100%;
+	font-family: "Magistral-Bold", serif;
+	font-weight: 400;
+}
+
+@mixin font-custom($fs: 1rem, $fw: 400, $ff, $lh: 100% ) {
+	font-size: $fs;
+	line-height: $lh;
+	font-family: $ff;
+	font-weight: $fw;
+}
