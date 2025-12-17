@@ -42,10 +42,10 @@
                         <a href="#accept" class="header__link">правила</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">победители</a>
+                        <a href="#winners" class="header__link">победители</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">FAQ</a>
+                        <a href="#faq" class="header__link">FAQ</a>
                     </li>                    
                 </ul>
             </nav>
@@ -60,11 +60,23 @@
         <span class="title__line title__line--gold">150 000 рублей</span>
     </h1>
     <button class="hero__btn">и других призов!</button>
-    <picture class="hero__img">
-        <source srcset="images/hero/banner_mobile.avif" media="(max-width: 5680px)" />
-        <source srcset="images/hero/banner_tabled.avif" media="(max-width: 1180px)" />
-        <img src="images/hero/banner_desc.avif" alt="баннер" />
-    </picture>
+
+    <div class="hero__body">
+                    <div class="hero__circle external hero__circle--large">
+                    </div>
+                    <div class="hero__circle external hero__circle--small"></div>
+
+                    <div class="hero__circle internal hero__circle--large">
+                    </div>
+                    <div class="hero__circle internal hero__circle--small"></div>
+
+                    <div class="hero__circle img hero__circle--large">
+                    </div>
+                    <div class="hero__circle img hero__circle--small"></div>
+                    <div class="hero__img">
+                        <img class="img" src="images/hero/hero.avif" alt="">
+                    </div>
+                </div>
     <p class="hero__text">
         Акция с 19 декабря 2025 г. по 19 января 2026 г.
     </p>
@@ -212,13 +224,13 @@
     </div>
 </section>
             <section class="subscription">
-    <div class="subscription__container">
+    
         <h2 class="subscription__title title">
             <span class="title__line title__line--gold">ЯНДЕКС ПЛЮС —</span>
             <span class="title__line">ЭТО МУЛЬТИПОДПИСКА для</span>
             <span class="title__line">вас и до 3 членов семьи</span>
         </h2>
-    </div>
+    
 
     <div class="subscription__content">
         <ul class="subscription__list">
@@ -294,8 +306,8 @@
            
         </ul>
         <div class="winners__actions">
-            <button class="winners__btn" id="show">показать всех победителей</button>
-            <button class="winners__btn winners__btn--white" id="hide">скрыть всех победителей</button>
+            <button class="winners__btn btn" id="show">показать всех победителей</button>
+            <button class="winners__btn btn btn--white" id="hide">скрыть всех победителей</button>
         </div>
     </div>
 </section>
@@ -439,10 +451,46 @@
         </div>
     </div>
 </section>
+            <section class="feedback" id="feedback">
+    <h2 class="feedback__title title">
+        <span class="title__line">обратная</span>
+        <span class="title__line title__line--gold">связь</span>
+    </h2>
+    <div class="feedback__inner">
+        <div class="feedback__body">
+            <p class="feedback__text">Не нашли ответа на свой вопрос? Напишите нам!</p>
+
+            <button class="feedback__btn btn btn--white" id="hide">Задать вопрос</button>
+        </div>
+    </div>
+</section>
         </div>
     </main>
-    
-
+    <footer class="footer" id="footer">
+    <div class="container">
+        <p class="footer__text">
+            Срок акции с 19 декабря 2025 года по 5 марта 2026 года, срок активации промокода для участия в розыгрыше до
+            19 января 2026 года включительно. Условия мультиподписки Яндекс Плюс и дополнительных опций <a
+                class="footer__link" href="#">ya.cc/b,</a> есть ограничения <a class="footer__link"
+                href="#">ya.cc/c.</a> Условия использования промокода <a class="footer__link" href="#">ya.cc/pk.</a>
+            Промокод можно активировать до 5 марта 2026. Доступ к материалам Яндекс Музыки предоставляется по
+            мультиподписке Яндекс Плюс (или ее включающей). Правила: <a class="footer__link" href="#">clck.ru/3QVud9</a>
+            Предусмотрено автопродление: мультиподписка (449 руб/мес), доп. опции по 200 руб/мес («Свои Плюсы в Х5
+            Клубе», «Детям», «Свои Плюсы в S7 Airlines»), 399 руб/мес («Иви»); требуется указание данных банковской
+            карты. Использование дополнительной опции «Свои Плюсы в S7 Airlines» возможно только при условии привязки
+            аккаунта S7 к учётной записи на Яндексе — авторизуйтесь или зарегистрируйтесь по ссылке:
+            <a class="footer__link" href="https://plus.yandex.ru/travel?s7-auth-redirect=1"
+                aria-label="Перейти на страницу Яндекс плюс">https://plus.yandex.ru/travel?s7-auth-redirect=1</a>.
+            Организатором акции является ООО "Серенити Медиа" Участвуя в акции, вы соглашаетесь на обработку
+            персональных данных, в т.ч. ООО "Серенити Медиа".
+        </p>
+        <p class="footer__text">
+            Организатором акции является ООО "Серенити Медиа" Участвуя в акции, вы соглашаетесь на <a
+                class="footer__link" href="#" aria-label="Перейти на страницу обработки персональных данных">обработку
+                персональных данных,</a> в т.ч. ООО "Серенити Медиа".
+        </p>
+    </div>
+</footer>
     <script src="js/script.js"></script>
 </body>
 
